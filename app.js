@@ -7,6 +7,7 @@ function signup() {
     user = ({ userName: name, userEmail: email, userPassword: password })
     document.getElementById('name').value = ""
     document.getElementById('email').value = ""
+    document.getElementById('password').value = "";
     const Http = new XMLHttpRequest();
     const url = 'https://login-system-jahan.herokuapp.com/signup';
     Http.open("POST", url);
