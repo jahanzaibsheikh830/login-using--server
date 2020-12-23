@@ -61,7 +61,7 @@ app.post("/login", (req, res, next) => {
         res.send("user not found")
     }
     else if (users[isFound].userPassword === sPass) {
-        res.send(`Login Success Name: ${users[isFound].userEmail} Email: ${currentEmail}`)
+        res.send(`Login Success Name: ${users[isFound].userName} Email: ${currentEmail}`)
     }
     else {
         res.status(403).send("Password or email invalid")
