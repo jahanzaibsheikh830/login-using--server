@@ -66,10 +66,6 @@ app.post("/login", (req, res, next) => {
     else {
         res.status(403).send("Password or email invalid")
     }
-    // console.log(req.body.email);
-    // users.push(req.body);
-    // console.log(req.body);
-    // res.send(users);
 });
 app.listen(PORT, function () {
     console.log("server is running");
