@@ -8,6 +8,7 @@ var users = [
 var express = require("express");
 var cors = require('cors')
 var morgan = require('morgan')
+const PORT = process.env.PORT || 5000
 var bodyParser = require('body-parser')
 var app = express();
 
@@ -70,6 +71,6 @@ app.post("/login", (req, res, next) => {
     // console.log(req.body);
     // res.send(users);
 });
-app.listen(3000, function () {
+app.listen(PORT, function () {
     console.log("server is running");
 });
